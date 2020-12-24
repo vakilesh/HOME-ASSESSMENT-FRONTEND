@@ -1,0 +1,83 @@
+body{
+  margin: 30px;
+}
+
+.tiles-container{
+  /* max-width: 1200px; */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  /* margin: 15px 30px; */
+  display: grid;
+  grid-gap: 1rem;
+  
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  grid-auto-flow: row;
+
+
+  /* display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 99%; */
+}
+
+.movie-tile{
+  /* background-color: dodgerblue; */
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; */
+
+  /* height: 4rem; */
+
+
+  /* border: 1px solid; */
+  
+  /* height: 200px;
+  
+  width: 430px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  color: white; */
+}
+
+.expand{
+  transform: scale(1.1);
+  transition: all 0.9s;
+}
+
+.description, .duration{
+  font-size: 12px;
+}
+
+.description, .duration, .title{
+  /* padding: 3px; */
+}
+
+.bottom{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+
+
+div[contentEditable="true"], span[contentEditable="true"] {
+  border: 1px solid white;
+}
+
+.pagination div {
+  margin: 10px 0;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination div.active {
+  /* background-color: dodgerblue; */
+  background-image: linear-gradient(rgb(90, 43, 159), rgb(49, 49, 49));
+  color: white;
+}
